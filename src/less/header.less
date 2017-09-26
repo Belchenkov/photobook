@@ -1,0 +1,30 @@
+@import "partials/params";
+@import "partials/mixins";
+
+#header {
+  background: url("img/header_bg.jpg") no-repeat center;
+  background-size: cover;
+  height: 547px;
+  padding-top: 40px;
+  .flex-center;
+  justify-content: flex-start;
+
+  & .text {
+    text-align: center;
+    margin: 60px 0;
+
+    & * {
+      font-weight: normal;
+    }
+
+    & h1 {
+      text-transform: uppercase;
+      font-size: 50px;
+      margin-bottom: 30px;
+    }
+
+    & h4 {
+      font-size: 25px;
+    }
+  }
+}
