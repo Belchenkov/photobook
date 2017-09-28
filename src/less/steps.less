@@ -1,0 +1,59 @@
+@import "partials/params";
+@import "partials/mixins";
+
+#steps {
+  padding: 50px 0;
+  text-align: center;
+  & .tiles {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 45px;
+
+    & .tile {
+      display: flex;
+      flex-direction: column;
+      width: 28%;
+
+      & .header {
+        text-align: center;
+        margin-bottom: 5px;
+        letter-spacing: 2px;
+        padding: 10px;
+        background-color: @primary-color;
+        font-weight: bold;
+        border-radius: 5px 5px 0 0;
+      }
+      & .content {
+        flex-grow: 1;
+        margin-bottom: 5px;
+        padding: 20px;
+        text-align: left;
+        background-color: @light-color;
+        border-radius:  0 0 5px 5px;
+      }
+
+      & p {
+        font-size: 13px;
+        margin-bottom: 5px;
+
+        &.red {
+          color: @red-color;
+        }
+      }
+
+      & ul {
+        .clean;
+        padding: 10px 0 0 30px;
+        font-size: 13px;
+
+        & li {
+          line-height: 2;
+        }
+      }
+    }
+  }
+
+  & button {
+
+  }
+}
